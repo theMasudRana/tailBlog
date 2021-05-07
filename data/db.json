@@ -27,6 +27,41 @@
                "imgURL": "https://cdn.pixabay.com/photo/2020/11/24/11/36/bedroom-5772286_960_720.jpg",
                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
                "id": 4
+          },
+          {
+               "author": "Masud Rana",
+               "title": "10 Secrets About Tec You Can Learn From TV",
+               "imgURL": "https://cdn.pixabay.com/photo/2016/06/11/01/15/window-1449251_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 5
+          },
+          {
+               "author": "Masud Rana",
+               "title": "10 Secrets About Tec You Can Learn From TV",
+               "imgURL": "https://cdn.pixabay.com/photo/2017/03/28/12/18/architecture-2181995_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 6
+          },
+          {
+               "author": "Masud Rana",
+               "title": "10 Secrets About Tec You Can Learn From TV",
+               "imgURL": "https://cdn.pixabay.com/photo/2017/07/25/16/55/coffee-2538842_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 7
+          },
+          {
+               "author": "Masud Rana",
+               "title": "10 Secrets About Tec You Can Learn From TV",
+               "imgURL": "https://cdn.pixabay.com/photo/2015/09/01/03/42/fashion-916400_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 8
+          }
+     ],
+     "banner": [
+          {
+               "title": "Technology used in this blog",
+               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eaque voluptas aut molestias vero nihil?",
+               "tcList": ["React", "TailwindCSS", "React Router DOM"]
           }
      ]
 }

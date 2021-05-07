@@ -1,40 +1,20 @@
-import { useState } from "react";
-
+import useFetch from "../useFetch";
 const Banner = () => {
-	const [counter, setCounter] = useState(0);
-
-	const handelIncrement = () => {
-		setCounter((countValue) => countValue + 1);
-	};
-	const handelDecrement = () => {
-		setCounter((countValue) => countValue - 1);
-	};
-
+	const { data: bannerData } = useFetch("http://localhost:8000/banner");
 	return (
-		<div className="banner-area pt-10 pb-10 bg-gray-200">
+		<div className="banner-area py-32 bg-gray-200">
 			<div className="container mx-auto">
-				<h1 className="text-center text-4xl font-bold">
-					Welcome to TailBlog
-				</h1>
-				<p className="text-center mt-2">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Itaque eaque voluptas aut molestias vero nihil?
-				</p>
-				<div className="grid place-items-center grid-cols-3">
-					<button
-						onClick={handelIncrement}
-						className="bg-indigo-500 px-5 py-2 text-white"
-					>
-						+
-					</button>
-					<p className="px-6">{counter}</p>
-					<button
-						onClick={handelDecrement}
-						className="bg-red-600 px-5 py-2 text-white"
-					>
-						- Minus
-					</button>
-				</div>
+				{bannerData.map((banner, index) => (
+					<div className="banner-content" key={index}>
+						<h2 className="text-4xl font-bold">{banner.title}</h2>
+						<p className="mt-2">{banner.description}</p>
+						<ul>
+							{banner.tcList.map((listItem, index) => (
+								<li key={index}>{listItem}</li>
+							))}
+						</ul>
+					</div>
+				))}
 			</div>
 		</div>
 	);

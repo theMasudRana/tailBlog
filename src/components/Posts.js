@@ -1,27 +1,24 @@
-import { useState, useEffect } from "react";
 import SectionTitle from "./SectionTitle";
+import useFetch from "../useFetch";
+import { Link } from "react-router-dom";
 const Posts = () => {
-	const [posts, setPosts] = useState([]);
-	const [isPending, setIsPending] = useState(true);
-	useEffect(() => {
-		fetch("http://localhost:8000/posts")
-			.then((response) => {
-				return response.json();
-			})
-			.then((data) => {
-				setPosts(data);
-				setIsPending(false);
-			});
-	}, []);
+	const { data: posts, isPending, error } = useFetch(
+		"http://localhost:8000/posts"
+	);
 	return (
-		<div className="container mx-auto pt-20 pb-20">
+		<div className="container mx-auto pt-20 pb-20 px-4 lg:px-0 ">
 			<SectionTitle title="Recent Posts" />
 			{isPending && (
 				<div className="loading-message bg-green-400 text-white rounded-md p-3 mb-8 text-lg font-medium">
 					<h1>Loading...</h1>
 				</div>
 			)}
-			<div className="grid grid-cols-4 gap-4">
+			{error && (
+				<div className="loading-message bg-red-500 text-white rounded-md p-3 mb-8 text-lg font-medium">
+					<h1>{error}</h1>
+				</div>
+			)}
+			<div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-7">
 				{posts &&
 					posts.map((post) => (
 						<article
@@ -32,12 +29,12 @@ const Posts = () => {
 							<div className="post-content p-6">
 								<div className="post-header mb-4">
 									<h1 className="mb-3">
-										<a
+										<Link
 											className="text-2xl capitalize font-medium transition duration-300  hover:text-indigo-600"
-											href=""
+											to={`/posts/${post.id}`}
 										>
 											{post.title}
-										</a>
+										</Link>
 									</h1>
 									<p className="flex place-center font-normal text-gray-500">
 										<svg
@@ -58,9 +55,12 @@ const Posts = () => {
 									</p>
 								</div>
 								<p className="text-gray-700">{post.content}</p>
-								<a href="/" className="button">
+								<Link
+									to={`/posts/${post.id}`}
+									className="button"
+								>
 									Read More
-								</a>
+								</Link>
 							</div>
 						</article>
 					))}

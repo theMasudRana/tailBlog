@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CreatePost from "./pages/CreatePost";
 import Home from "./pages/Home";
+import SinglePost from "./pages/SinglePost";
 
 const App = () => {
 	return (
@@ -23,6 +24,9 @@ const App = () => {
 					</Route>
 					<Route path="/create-post">
 						<CreatePost />
+					</Route>
+					<Route path="/posts/:id">
+						<SinglePost />
 					</Route>
 				</Switch>
 
