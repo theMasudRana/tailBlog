@@ -1,0 +1,32 @@
+{
+     "posts": [
+          {
+               "author": "Masud Rana",
+               "title": "The Worst Advice You Could Ever Get About Tec",
+               "imgURL": "https://cdn.pixabay.com/photo/2018/06/14/21/15/the-interior-of-the-3475656_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 1
+          },
+          {
+               "author": "Masud Rana",
+               "title": "7 Things About Tec You'll Kick Yourself for Not Knowing",
+               "imgURL": "https://cdn.pixabay.com/photo/2019/10/12/04/59/koi-4543131_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 2
+          },
+          {
+               "author": "Masud Rana",
+               "title": "What Hollywood Can Teach Us About Tec",
+               "imgURL": "https://cdn.pixabay.com/photo/2016/03/27/20/00/coffee-1284041_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 3
+          },
+          {
+               "author": "Masud Rana",
+               "title": "10 Secrets About Tec You Can Learn From TV",
+               "imgURL": "https://cdn.pixabay.com/photo/2020/11/24/11/36/bedroom-5772286_960_720.jpg",
+               "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est distinctio dicta repudiandae porro adipisci quas provident facilis voluptates! Molestiae veritatis nostrum dicta expedita sunt? Ad possimus nulla sequi ut veniam?",
+               "id": 4
+          }
+     ]
+}
